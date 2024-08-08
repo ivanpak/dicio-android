@@ -92,3 +92,11 @@ skills:
         captures:
           - id: where
             type: string
+
+  - id: music
+    specificity: high
+    sentences:
+      - id: query
+        captures:
+          - id: song
+            type: string
