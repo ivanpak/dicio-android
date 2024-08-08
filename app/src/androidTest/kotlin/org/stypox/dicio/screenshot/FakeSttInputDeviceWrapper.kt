@@ -8,9 +8,14 @@ import org.stypox.dicio.ui.home.SttState
 class FakeSttInputDeviceWrapper : SttInputDeviceWrapper {
     override val uiState: MutableStateFlow<SttState> = MutableStateFlow(SttState.NotInitialized)
 
-    override fun tryLoad(thenStartListeningEventListener: ((InputEvent) -> Unit)?) {
+    override fun tryLoad(thenStartListeningEventListener: ((InputEvent) -> Unit)?): Boolean {
+        return true
     }
 
     override fun onClick(eventListener: (InputEvent) -> Unit) {
+    }
+
+    override fun stopListening() {
+        TODO("Not yet implemented")
     }
 }
