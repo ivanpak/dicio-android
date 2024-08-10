@@ -163,8 +163,11 @@
     <string name="skill_timer_query_last">The last timer expires in %1$s</string>
     <string name="skill_timer_none_canceled">OK, no timer was canceled</string>
     <string name="stt_service_label">Dicio offline speech recognition</string>
-    <string name="skill_music_specify_song">Specify the song you would like to listen to</string>
+    <string name="skill_music_specify_song">Specify the song you would like to listen to or the action to execute</string>
     <string name="skill_music_playing">Playing %1$s</string>
     <string name="skill_sentence_example_music">Play House of the Rising Sun</string>
     <string name="skill_name_music">Music</string>
+    <string name="skill_music_pause">Pausing music</string>
+    <string name="skill_music_resume">Resuming music</string>
+    <string name="skill_music_next">Playing next song</string>
 </resources>

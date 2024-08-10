@@ -1,2 +1,13 @@
 query:
-  - play .song.
+  - play song? .song.
+  - play the? song .song.
+
+pause:
+  - (pause|stop) the? (song|music)
+
+resume:
+  - (resume|play) the? (song|music)
+
+next:
+  - play? the? next (song|music)
+  - (go to)? the? next (song|music)

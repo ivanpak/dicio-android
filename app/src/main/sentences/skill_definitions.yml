@@ -100,3 +100,6 @@ skills:
         captures:
           - id: song
             type: string
+      - id: pause
+      - id: resume
+      - id: next
