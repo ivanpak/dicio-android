@@ -36,14 +36,10 @@ class MusicSkill(correspondingSkillInfo: SkillInfo, data: StandardRecognizerData
             val intent1 = Intent(MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH)
             intent1.putExtra(MediaStore.EXTRA_MEDIA_FOCUS, "vnd.android.cursor.item/*")
             intent1.putExtra(SearchManager.QUERY, songToPlay)
-            // intent1.setAction("com.google.android.youtube.music.action.play")
-            // intent1.setAction("com.google.android.youtube.music.pendingintent.controller_widget_play")
-            // intent1.setPackage("com.google.android.apps.youtube.music")
-            // intent1.setComponent(ComponentName("com.google.android.apps.youtube.music", "com.google.android.apps.youtube.music.activities.MusicActivity"))
+            // intent1.setComponent(ComponentName("com.spotify.music","com.spotify.music.SpotifyMainActivity"))
             intent1.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            if (intent1.resolveActivity(ctx.android.packageManager) != null) {
-                ctx.android.startActivity(intent1)
-            }
+
+            ctx.android.startActivity(intent1);
 
             return MusicOutput(songToPlay, null)
         } else {
